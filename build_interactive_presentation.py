@@ -1267,10 +1267,10 @@ html_content = f"""<!DOCTYPE html>
                         </div>
                         <h3 class="card-title" style="color: var(--gold-light); font-size: 1.1rem;">ตั้งเพดานส่วนลดเหล็กไม่เกิน 20%</h3>
                         <p class="card-text" style="font-size: 0.85rem;">
-                            ห้ามเซลส์และระบบให้ส่วนลดเกิน <strong>20% (Hard Cap)</strong> ในทุกกลุ่มสินค้า ประเทศหลุมดำ (Turkey, Nigeria) ต้องยกเลิกโปรลด 50-70% ทันที
+                            ห้ามระบบให้ส่วนลดเกิน <strong>20% (Hard Cap)</strong> เพราะจากข้อมูลจริง <strong>20% คือ "จุดเปลี่ยนมรณะ (Tipping Point)"</strong>: กลุ่มลด ≤ 20% สร้างกำไรสูงถึง <strong>+$2.28M (Win Rate 92.5%)</strong> แต่หากลดเกิน 20% เมื่อไหร่ ระบบจะขาดทุนทันที (Win Rate ดิ่งเหลือเพียง 0% - 22.8%)
                         </p>
                         <div style="font-size: 0.78rem; color: #fde047; background: rgba(245, 158, 11, 0.1); padding: 0.5rem; border-radius: 8px; margin-top: 0.75rem; font-weight: 700;">
-                            💰 ผลลัพธ์: ดึงกำไรที่สูญเสียจากกลุ่มลดแหลกกลับมาได้ทันทีกว่าปีละครึ่งล้านเหรียญ!
+                            💰 ผลลัพธ์: ล็อกระบบไม่ให้ข้ามเส้น 20% เซฟเงินที่รั่วไหลกลับมาได้ทันทีกว่าปีละครึ่งล้านเหรียญ!
                         </div>
                     </div>
 
