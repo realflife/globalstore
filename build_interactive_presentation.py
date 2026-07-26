@@ -1247,6 +1247,59 @@ html_content = f"""<!DOCTYPE html>
                     </div>
                 </div>
 
+                <!-- Strategic Alignment Flow Diagram -->
+                <div class="card" style="margin-top: 1.5rem; padding: 1.25rem; background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+                    <h3 style="color: #fff; font-size: 0.95rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.6rem;">
+                        <i class="fa-solid fa-diagram-project" style="color: var(--gold-light); font-size: 1.1rem;"></i>
+                        <span style="font-weight: 700;">ผังเชื่อมโยงยุทธศาสตร์รุก-รับ (Strategic Alignment Flow: จาก 3 แกนปรับทัพ สู่ 4 นโยบายสั่งการ)</span>
+                    </h3>
+                    <div class="grid-3" style="gap: 1rem; text-align: center; font-size: 0.8rem;">
+                        <!-- Flow Column 1: What -> Policy 2 & 4 -->
+                        <div style="background: rgba(16, 185, 129, 0.06); padding: 0.85rem; border-radius: 8px; border: 1px dashed rgba(16, 185, 129, 0.35); display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div style="color: var(--emerald-light); font-weight: 800; margin-bottom: 0.35rem; font-size: 0.9rem;">📦 1. ขายอะไร (What)</div>
+                                <div style="color: #fff; font-size: 0.75rem; margin-bottom: 0.4rem;">ดัน <strong>Copiers & Phones</strong> (กำไร #1)<br>แก้ <strong>Tables</strong> (ขาดทุน -$64K)</div>
+                            </div>
+                            <div>
+                                <div style="color: var(--gold-light); font-weight: 700; font-size: 0.75rem; margin: 0.4rem 0;">⬇️ โยงสู่นโยบายสั่งการ ⬇️</div>
+                                <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+                                    <span style="background: rgba(244, 63, 94, 0.2); color: #fda4af; padding: 0.3rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem;">🔴 นโยบาย 2: บังคับขาย Tables แบบ Bundle</span>
+                                    <span style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 0.3rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem;">🔵 นโยบาย 4: ขยายขายพ่วง Copiers+Accessories</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flow Column 2: Where -> Policy 1 & 3 -->
+                        <div style="background: rgba(245, 158, 11, 0.06); padding: 0.85rem; border-radius: 8px; border: 1px dashed rgba(245, 158, 11, 0.35); display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div style="color: var(--gold-light); font-weight: 800; margin-bottom: 0.35rem; font-size: 0.9rem;">🌍 2. ขายที่ไหน (Where)</div>
+                                <div style="color: #fff; font-size: 0.75rem; margin-bottom: 0.4rem;">รุก <strong>Big 3 + Canada</strong> (Margin 26%)<br>คุมหลุมดำ <strong>EMEA & Turkey</strong> (ลด 60-70%)</div>
+                            </div>
+                            <div>
+                                <div style="color: var(--gold-light); font-weight: 700; font-size: 0.75rem; margin: 0.4rem 0;">⬇️ โยงสู่นโยบายสั่งการ ⬇️</div>
+                                <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+                                    <span style="background: rgba(245, 158, 11, 0.2); color: #fde047; padding: 0.3rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem;">🟡 นโยบาย 1: ล็อก Hard Cap 20% ในหลุมดำ</span>
+                                    <span style="background: rgba(16, 185, 129, 0.2); color: var(--emerald-light); padding: 0.3rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem;">🟢 นโยบาย 3: คุมส่ง Express ข้ามทวีป</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flow Column 3: Who -> Policy 4 & Scale Up -->
+                        <div style="background: rgba(168, 85, 247, 0.06); padding: 0.85rem; border-radius: 8px; border: 1px dashed rgba(168, 85, 247, 0.35); display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div style="color: #d8b4fe; font-weight: 800; margin-bottom: 0.35rem; font-size: 0.9rem;">👥 3. ขายให้ใคร (Who)</div>
+                                <div style="color: #fff; font-size: 0.75rem; margin-bottom: 0.4rem;">โฟกัส <strong>Home Office & Corporate</strong><br>กำลังซื้อสูง ไม่อ่อนไหวต่อส่วนลด</div>
+                            </div>
+                            <div>
+                                <div style="color: var(--gold-light); font-weight: 700; font-size: 0.75rem; margin: 0.4rem 0;">⬇️ โยงสู่นโยบายสั่งการ ⬇️</div>
+                                <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+                                    <span style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 0.3rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem;">🔵 นโยบาย 4: อัดโปรโมชันขายพ่วงช่วง Q4 High Season ให้ลูกค้า B2B Corporate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="speaking-notes">
                     <div class="notes-header"><i class="fa-solid fa-microphone-lines"></i> สคริปต์พูด (Slide 6: กลยุทธ์พอร์ตโฟลิโอ)</div>
                     <div class="notes-text">"เมื่อเรารู้ปัญหาแล้ว นี่คือแผนปรับทัพครับ 1. ขายอะไร: อัดงบดัน Copiers และ Phones ที่กำไรดีสุด ส่วน Tables ต้องปรับแบบแผน 2. ขายที่ไหน (Where to Sell): ในระดับกลุ่ม Market เราต้องเทงบ 80% ขยายฐานใน 3 ภูมิภาคหลักคือ APAC, EU และ US ที่ทำกำไรกว่า 1 ล้านเหรียญ และต้องรีบบุกขยายตลาดเพชรในตมอย่าง Canada ที่ Margin สูงสุดในโลก 26.6% (Win Rate 98%) เพราะแทบไม่ลดราคา ส่วนระดับประเทศต้องดัน China กับ India และล็อกกฎเหล็กในภูมิภาค EMEA และหลุมดำอย่าง Turkey, Nigeria และ Netherlands ทันทีครับ และ 3. ขายให้ใคร: โฟกัสลูกค้า Home Office และ Corporate ที่มีกำลังซื้อสูงและไม่อ่อนไหวต่อส่วนลดครับ"</div>
