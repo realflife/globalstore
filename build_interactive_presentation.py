@@ -728,6 +728,188 @@ html_content = f"""<!DOCTYPE html>
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }}
+
+        /* ========================================== */
+        /* RESPONSIVE & MOBILE-FIRST DESIGN UTILITIES */
+        /* ========================================== */
+
+        /* Tablet & Smaller Laptops (max-width: 1024px) */
+        @media (max-width: 1024px) {{
+            .navbar {{
+                padding: 0.8rem 1.5rem;
+                flex-wrap: wrap;
+                gap: 0.75rem;
+                justify-content: space-between;
+            }}
+            .mode-switcher {{
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                margin-top: 0.25rem;
+            }}
+            .main-content {{
+                padding: 7.5rem 1.5rem 5rem;
+            }}
+            .grid-4 {{
+                grid-template-columns: repeat(2, 1fr);
+            }}
+            .grid-3 {{
+                grid-template-columns: repeat(2, 1fr);
+            }}
+            .slide {{
+                padding: 2rem 2rem;
+                max-height: calc(100vh - 12rem);
+            }}
+            .title-main {{
+                font-size: 2.6rem;
+            }}
+            .slide-title {{
+                font-size: 1.8rem;
+            }}
+            .chart-box {{
+                height: 320px;
+            }}
+        }}
+
+        /* Mobile Devices (max-width: 768px) */
+        @media (max-width: 768px) {{
+            .navbar {{
+                padding: 0.75rem 1rem;
+            }}
+            .logo-text {{
+                font-size: 1rem !important;
+            }}
+            .nav-controls {{
+                gap: 0.5rem;
+            }}
+            .btn {{
+                padding: 0.4rem 0.8rem;
+                font-size: 0.78rem;
+            }}
+            .slide-counter {{
+                padding: 0.35rem 0.8rem;
+                font-size: 0.78rem;
+            }}
+            .mode-btn {{
+                padding: 0.4rem 0.85rem;
+                font-size: 0.8rem;
+            }}
+            .main-content {{
+                padding: 8.5rem 1rem 5.5rem;
+            }}
+            .grid-4, .grid-3, .grid-2 {{
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }}
+            .slide {{
+                padding: 1.5rem 1.25rem;
+                border-radius: 18px;
+                max-height: calc(100vh - 13.5rem);
+            }}
+            .dashboard-container {{
+                padding: 1.5rem 1.25rem;
+                border-radius: 18px;
+            }}
+            .title-main {{
+                font-size: 2rem;
+                margin-bottom: 0.85rem;
+            }}
+            .slide-title {{
+                font-size: 1.5rem;
+            }}
+            .slide-subtitle {{
+                font-size: 0.9rem;
+            }}
+            .card {{
+                padding: 1.25rem;
+            }}
+            .kpi-val {{
+                font-size: 1.5rem;
+            }}
+            .chart-box {{
+                height: 280px;
+                padding: 1rem;
+            }}
+            .chart-title {{
+                font-size: 0.88rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.3rem;
+            }}
+            .filter-toolbar {{
+                padding: 1rem;
+                gap: 0.75rem;
+                flex-direction: column;
+                align-items: stretch;
+            }}
+            .filter-group {{
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.35rem;
+            }}
+            .filter-select {{
+                width: 100%;
+            }}
+            .quick-btn {{
+                flex: 1 1 auto;
+                text-align: center;
+            }}
+            .table-container {{
+                padding: 1rem;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }}
+            .data-table {{
+                min-width: 600px;
+            }}
+            .search-input {{
+                width: 100%;
+            }}
+            .search-input:focus {{
+                width: 100%;
+            }}
+            .footer-controls {{
+                padding: 0.6rem 1rem;
+                gap: 0.5rem;
+            }}
+            .slide-dots {{
+                display: none;
+            }}
+            .footer-controls .btn {{
+                flex: 1;
+                justify-content: center;
+                padding: 0.55rem 0.5rem;
+                font-size: 0.82rem;
+            }}
+        }}
+
+        /* Small Phones (max-width: 480px) */
+        @media (max-width: 480px) {{
+            .main-content {{
+                padding: 9rem 0.75rem 5.5rem;
+            }}
+            .slide, .dashboard-container {{
+                padding: 1.25rem 1rem;
+                border-radius: 14px;
+            }}
+            .title-main {{
+                font-size: 1.65rem;
+            }}
+            .slide-title {{
+                font-size: 1.3rem;
+            }}
+            .kpi-card {{
+                padding: 1rem;
+            }}
+            .logo-icon {{
+                width: 30px;
+                height: 30px;
+                font-size: 0.95rem;
+            }}
+            .mode-btn span {{
+                font-size: 0.75rem;
+            }}
+        }}
     </style>
 </head>
 <body>
