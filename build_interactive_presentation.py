@@ -1706,7 +1706,7 @@ html_content = f"""<!DOCTYPE html>
 
             let records = RAW_DATA.drain_orders;
             if (quickMode === 'all' || quickMode === 'winners') {{
-                # Convert cube summary to readable records for table
+                // Convert cube summary to readable records for table
                 records = RAW_DATA.cube.map(r => ({{
                     'Global Order ID': `CUBE_${{r['Order Year']}}_${{r['Market']}}`,
                     'Country': `${{r['Market']}} Region`,
