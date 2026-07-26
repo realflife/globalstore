@@ -1160,9 +1160,9 @@ html_content = f"""<!DOCTYPE html>
 
                     <div style="display: flex; flex-direction: column; gap: 0.85rem;">
                         <div class="card" style="border-left: 4px solid var(--rose); padding: 1.1rem; background: rgba(244, 63, 94, 0.05);">
-                            <div style="color: #fda4af; font-weight: 700; font-size: 0.9rem;"><i class="fa-solid fa-triangle-exclamation"></i> ความเสียหายจากโปรลดแหลก (> 30%):</div>
-                            <div style="font-size: 1.5rem; font-weight: 800; color: #fff; margin: 0.2rem 0;">-$793,526</div>
-                            <p class="card-text" style="font-size: 0.8rem; margin-bottom: 0;">จากออเดอร์ 10,361 รายการ (20% ขององค์กร) ที่ได้ส่วนลด 31-80% ดึงกำไรทั้งบริษัทลดลงอย่างหนัก!</p>
+                            <div style="color: #fda4af; font-weight: 700; font-size: 0.9rem;"><i class="fa-solid fa-triangle-exclamation"></i> กับดักส่วนลด (The Discount Trap) คือสาเหตุหลัก:</div>
+                            <div style="font-size: 1.6rem; font-weight: 900; color: #fda4af; margin: 0.2rem 0;">สูญเสียกำไร -$814,000+</div>
+                            <p class="card-text" style="font-size: 0.8rem; margin-bottom: 0;"><strong>ส่วนลดเกิน 20% ทำให้ออเดอร์ขาดทุนทันที!</strong> โดยมีออเดอร์ถึง 10,361 รายการ (20% ขององค์กร) ที่ได้ส่วนลด 21-80% ฉุดกำไรทั้งบริษัทลดลงอย่างหนัก</p>
                         </div>
 
                         <div class="card" style="border-left: 4px solid var(--gold); padding: 1.1rem;">
@@ -1179,35 +1179,55 @@ html_content = f"""<!DOCTYPE html>
 
                 <div class="speaking-notes">
                     <div class="notes-header"><i class="fa-solid fa-microphone-lines"></i> สคริปต์พูด (Slide 4: กับดักส่วนลด)</div>
-                    <div class="notes-text">"ดูกราฟแท่งสีแดงในจอครับ นี่คือหลักฐานที่ชัดเจนที่สุด เมื่อเราให้ส่วนลด 0-20% แท่งกำไรเป็นสีเขียวงดงาม แต่ทันทีที่ให้ส่วนลด 21% ขึ้นไป แท่งกราฟทิ่มลงดินติดลบทันที! โดยออเดอร์ที่ลดเกิน 30% สร้างผลขาดทุนรวมกันเกือบ 8 แสนเหรียญ นี่คือเหตุผลที่สินค้าอย่างโต๊ะทำงาน หรือตลาดนิวซีแลนด์และไทย ยอดขายโตแต่กำไรจริงกลับติดลบครับ"</div>
+                    <div class="notes-text">"ดูกราฟแท่งสีแดงในจอครับ นี่คือหลักฐานที่ชัดเจนที่สุด เมื่อเราให้ส่วนลด 0-20% แท่งกำไรเป็นสีเขียวงดงาม แต่ทันทีที่ให้ส่วนลดเกิน 20% ออเดอร์จะขาดทุนทันที! สูญเสียกำไรสะสมรวมสูงถึง $814,000+ นี่คือสาเหตุหลักที่เรียกว่า กับดักส่วนลด (The Discount Trap) ครับ"</div>
                 </div>
             </div>
 
-            <!-- SLIDE 5: Root Cause 2 - Shipping Drain (Interactive Donut & Preview Table) -->
+            <!-- SLIDE 5: Root Cause 2 - Shipping Drain & Chronic Loss Countries (Interactive Donut & Preview Table) -->
             <div class="slide" id="slide-5">
                 <div class="slide-header">
-                    <div class="slide-tag" style="color: var(--cyan); background: rgba(6, 182, 212, 0.12); border-color: rgba(6, 182, 212, 0.35);"><i class="fa-solid fa-truck-fast"></i> Root Cause #2: Logistics Cost Outliers</div>
-                    <h2 class="slide-title">เปิดโปงปัจจัยที่ 2: "วิกฤตค่าจัดส่งสุดขั้วกัดกินกำไร"</h2>
-                    <p class="slide-subtitle">ค้นพบออเดอร์ส่งด่วนข้ามทวีป 634 รายการ ที่ค่าจัดส่งแพงกว่ากำไรขั้นต้นของสินค้า เปลี่ยนกำไรเป็นขาดทุน</p>
+                    <div class="slide-tag" style="color: var(--cyan); background: rgba(6, 182, 212, 0.12); border-color: rgba(6, 182, 212, 0.35);"><i class="fa-solid fa-truck-fast"></i> Root Cause #2: Logistics Outliers & Chronic Loss Countries</div>
+                    <h2 class="slide-title">เปิดโปงปัจจัยที่ 2: "กับดักส่วนลดเกิน 20% & ขาดทุนเรื้อรัง 29 ประเทศ"</h2>
+                    <p class="slide-subtitle">เจาะลึก 2 หลุมดำหลัก: ส่วนลดเกิน 20% สูญกำไร $814,000+ และขาดทุนเรื้อรังใน 29 ประเทศ รวม $447,000</p>
+                </div>
+
+                <!-- Executive Highlight Box requested by user -->
+                <div class="card" style="border-left: 4px solid var(--rose); background: radial-gradient(circle at top left, rgba(244, 63, 94, 0.15), rgba(15, 23, 42, 0.8)); margin-bottom: 1.25rem; padding: 1.1rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <div style="color: #fda4af; font-weight: 800; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem;">
+                        <i class="fa-solid fa-triangle-exclamation" style="font-size: 1.2rem; color: #f43f5e;"></i>
+                        <span>สรุปปัจจัยความเสียหายหลัก (Core Loss Drivers):</span>
+                    </div>
+                    <div class="grid-2" style="gap: 1rem;">
+                        <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(244, 63, 94, 0.35); padding: 0.85rem; border-radius: 10px;">
+                            <div style="font-size: 0.82rem; color: var(--gold-light); font-weight: 700;"><i class="fa-solid fa-tags"></i> กับดักส่วนลด (The Discount Trap):</div>
+                            <div style="font-size: 1.4rem; font-weight: 900; color: #fda4af; margin: 0.15rem 0;">สูญเสียกำไร -$814,000+</div>
+                            <div style="font-size: 0.78rem; color: #cbd5e1; line-height: 1.4;"><strong>ส่วนลดเกิน 20% ทำให้ออเดอร์ขาดทุนทันที!</strong> เป็นสาเหตุหลักดึงกำไรองค์กรลดลงอย่างหนัก</div>
+                        </div>
+                        <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(244, 63, 94, 0.35); padding: 0.85rem; border-radius: 10px;">
+                            <div style="font-size: 0.82rem; color: #38bdf8; font-weight: 700;"><i class="fa-solid fa-earth-americas"></i> ตลาดขาดทุนเรื้อรัง (Chronic Loss Markets):</div>
+                            <div style="font-size: 1.4rem; font-weight: 900; color: #fda4af; margin: 0.15rem 0;">ขาดทุน 29 ประเทศ รวม -$447,000</div>
+                            <div style="font-size: 0.78rem; color: #cbd5e1; line-height: 1.4;">เกิดจากโปรโมชั่นส่วนลดไม่พิจารณาต้นทุน + ค่าจัดส่งส่งด่วนกินกำไรข้ามทวีป</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="grid-2" style="grid-template-columns: 0.9fr 1.1fr; align-items: center;">
-                    <div class="chart-box" style="height: 380px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <div class="chart-box" style="height: 360px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
                         <div class="chart-title" style="width: 100%;"><span>🚢 สัดส่วนกลุ่มค่าจัดส่ง Outliers</span></div>
-                        <div style="width: 250px; height: 250px;"><canvas id="chartShippingDonut"></canvas></div>
+                        <div style="width: 230px; height: 230px;"><canvas id="chartShippingDonut"></canvas></div>
                         <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.75rem; text-align: center;">
                             ออเดอร์ขาดทุนจากค่าส่ง (Red Drain) สูญเสียรวม <strong style="color:#fda4af;">-$236,784</strong>
                         </div>
                     </div>
 
                     <div style="display: flex; flex-direction: column; gap: 0.85rem;">
-                        <div class="card" style="border-left: 4px solid var(--cyan); padding: 1.1rem;">
-                            <h3 class="card-title" style="color: var(--cyan); font-size: 1rem;"><i class="fa-solid fa-shield-halved"></i> การแก้ปัญหา: ระบบเตือนภัย Is Shipping Cost Draining Profit</h3>
-                            <p class="card-text" style="font-size: 0.82rem; margin-bottom: 0;">ตามหลัก 4-Mantra เราห้ามลบ 634 ออเดอร์นี้เพราะเป็นรายจ่ายจริง เราจึงสร้างป้ายเตือนภัย <code>True/False</code> ฝังใน Data เพื่อให้ฝ่าย Operation กรองตรวจสอบได้ทันทีใน Dashboard ด้านล่างนี้:</p>
+                        <div class="card" style="border-left: 4px solid var(--cyan); padding: 1rem;">
+                            <h3 class="card-title" style="color: var(--cyan); font-size: 0.95rem;"><i class="fa-solid fa-shield-halved"></i> การแก้ปัญหา: ระบบเตือนภัย Is Shipping Cost Draining Profit</h3>
+                            <p class="card-text" style="font-size: 0.8rem; margin-bottom: 0;">สร้างป้ายเตือนภัย <code>True/False</code> ฝังใน Data เพื่อให้ฝ่าย Operation กรองตรวจสอบและหยุดส่งด่วนที่ขาดทุนใน Dashboard ได้ทันที:</p>
                         </div>
 
                         <!-- Mini Preview Table -->
-                        <div style="background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 0.85rem; max-height: 200px; overflow-y: auto;">
+                        <div style="background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 0.85rem; max-height: 180px; overflow-y: auto;">
                             <div style="font-size: 0.78rem; font-weight: 700; color: #fda4af; margin-bottom: 0.5rem;"><i class="fa-solid fa-list-check"></i> ตัวอย่างออเดอร์จริงที่ค่าส่งกินกำไร (Preview from Cleaned Data):</div>
                             <table class="data-table" style="font-size: 0.75rem;">
                                 <thead>
@@ -1228,8 +1248,8 @@ html_content = f"""<!DOCTYPE html>
                 </div>
 
                 <div class="speaking-notes">
-                    <div class="notes-header"><i class="fa-solid fa-microphone-lines"></i> สคริปต์พูด (Slide 5: วิกฤตค่าขนส่ง)</div>
-                    <div class="notes-text">"นอกจากเรื่องส่วนลดแล้ว ในกราฟโดนัทเราพบว่ามีออเดอร์ 6.7% ที่ค่าส่งแพงผิดปกติ และมีถึง 634 ออเดอร์ที่ค่าส่งแพงกว่ากำไรสินค้า ทำเราสูญเงินไป 2.36 แสนเหรียญ! ลองดูตัวอย่างในตารางจริงด้านขวาครับ เช่น ออเดอร์ส่งไปต่างประเทศด้วย First Class หรือ Same Day ค่าส่งหลักร้อยแต่กำไรติดลบ วิธีแก้คือเราสร้างระบบเตือนภัยให้ฝ่ายโลจิสติกส์เปิดตารางนี้ใน BI Dashboard และระงับการส่งด่วนที่ขาดทุนทันทีครับ"</div>
+                    <div class="notes-header"><i class="fa-solid fa-microphone-lines"></i> สคริปต์พูด (Slide 5: สรุปปัจจัยความเสียหาย)</div>
+                    <div class="notes-text">"ในสไลด์ปัจจัยที่ 2 นี้ เราสรุป 2 ตัวเลขสำคัญที่ผู้บริหารต้องทราบครับ: 1) กับดักส่วนลดเกิน 20% สูญเสียกำไรไปกว่า $814,000+ ทำให้ออเดอร์ขาดทุนทันที และ 2) มีประเทศที่ขาดทุนเรื้อรังถึง 29 ประเทศ สูญเสียรวม $447,000 จากการให้ส่วนลดลึกประกอบกับค่าขนส่งส่งด่วนข้ามทวีปที่แพงกว่ากำไรสินค้าครับ"</div>
                 </div>
             </div>
 
