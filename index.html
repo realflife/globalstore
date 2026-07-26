@@ -681,6 +681,14 @@
             .grid-3 {
                 grid-template-columns: repeat(2, 1fr);
             }
+            .data-flow-pipeline {
+                grid-template-columns: 1fr !important;
+                min-width: 100% !important;
+            }
+            .data-flow-pipeline .pulse-arrow {
+                transform: rotate(90deg);
+                margin: 0.5rem 0;
+            }
             .slide {
                 padding: 2rem 2rem;
                 max-height: calc(100vh - 12rem);
@@ -1172,56 +1180,89 @@
                     </div>
                 </div>
 
-                <!-- Strategic Alignment Flow Diagram -->
-                <div class="card" style="margin-top: 1.5rem; padding: 1.25rem; background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
-                    <h3 style="color: #fff; font-size: 0.95rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.6rem;">
-                        <i class="fa-solid fa-diagram-project" style="color: var(--gold-light); font-size: 1.1rem;"></i>
-                        <span style="font-weight: 700;">ผังเชื่อมโยงยุทธศาสตร์รุก-รับ (Strategic Alignment Flow: จาก 3 แกนปรับทัพ สู่ 4 นโยบายสั่งการ)</span>
-                    </h3>
-                    <div class="grid-3" style="gap: 1rem; text-align: center; font-size: 0.8rem;">
-                        <!-- Flow Column 1: What -> Policy 2 & 4 -->
-                        <div style="background: rgba(16, 185, 129, 0.06); padding: 0.85rem; border-radius: 8px; border: 1px dashed rgba(16, 185, 129, 0.35); display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div style="color: var(--emerald-light); font-weight: 800; margin-bottom: 0.35rem; font-size: 0.9rem;">📦 1. ขายอะไร (What)</div>
-                                <div style="color: #fff; font-size: 0.75rem; margin-bottom: 0.4rem;">ดัน <strong>Copiers & Phones</strong> (กำไร #1)<br>แก้ <strong>Tables</strong> (ขาดทุน -$64K)</div>
+                <!-- SYSTEM DATA FLOW PIPELINE DIAGRAM -->
+                <div class="card" style="margin-top: 1.5rem; padding: 1.25rem; background: radial-gradient(circle at top left, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.98)); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); overflow-x: auto;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.75rem;">
+                        <h3 style="color: #fff; font-size: 0.95rem; margin: 0; display: flex; align-items: center; gap: 0.6rem;">
+                            <i class="fa-solid fa-project-diagram" style="color: #38bdf8; font-size: 1.15rem; filter: drop-shadow(0 0 8px #38bdf8);"></i>
+                            <span style="font-weight: 800; letter-spacing: 0.3px;">SYSTEM DATA FLOW: การไหลของข้อมูลจากต้นเหตุสู่ 4 นโยบายสั่งการอัตโนมัติ</span>
+                        </h3>
+                        <span class="badge-pill" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); font-size: 0.72rem;">⚡ Real-time Decision Pipeline</span>
+                    </div>
+
+                    <!-- DATA FLOW PIPELINE CONTAINER -->
+                    <div class="data-flow-pipeline" style="display: grid; grid-template-columns: 1fr 40px 1.25fr 40px 1fr; align-items: center; gap: 0.5rem; min-width: 720px;">
+                        
+                        <!-- STAGE 1: RAW DATA & PROBLEMS -->
+                        <div style="background: rgba(244, 63, 94, 0.04); border: 1px solid rgba(244, 63, 94, 0.35); border-radius: 10px; padding: 0.85rem; position: relative;">
+                            <div style="background: var(--rose); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 0.2rem 0.55rem; border-radius: 6px; display: inline-block; margin-bottom: 0.65rem;">STAGE 1: 🚨 ปัญหาข้อมูลดิบ (Root Causes)</div>
+                            
+                            <div style="background: rgba(15, 23, 42, 0.9); border-left: 3px solid var(--rose); padding: 0.55rem; border-radius: 6px; margin-bottom: 0.5rem; font-size: 0.75rem;">
+                                <div style="color: #fda4af; font-weight: 700;">📉 จุดรั่ว 1: ส่วนลดเกิน 20%</div>
+                                <div style="color: var(--text-secondary); font-size: 0.7rem;">ออเดอร์ลด >20% ขาดทุนทันที -$500K</div>
                             </div>
-                            <div>
-                                <div style="color: var(--gold-light); font-weight: 700; font-size: 0.75rem; margin: 0.4rem 0;">⬇️ โยงสู่นโยบายสั่งการ ⬇️</div>
-                                <div style="display: flex; flex-direction: column; gap: 0.35rem;">
-                                    <span style="background: rgba(244, 63, 94, 0.2); color: #fda4af; padding: 0.3rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem;">🔴 นโยบาย 2: บังคับขาย Tables แบบ Bundle</span>
-                                    <span style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 0.3rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem;">🔵 นโยบาย 4: ขยายขายพ่วง Copiers+Accessories</span>
-                                </div>
+                            <div style="background: rgba(15, 23, 42, 0.9); border-left: 3px solid var(--rose); padding: 0.55rem; border-radius: 6px; font-size: 0.75rem;">
+                                <div style="color: #fda4af; font-weight: 700;">🚚 จุดรั่ว 2: โลจิสติกส์ & โต๊ะ</div>
+                                <div style="color: var(--text-secondary); font-size: 0.7rem;">ส่ง Express ขาดทุน -$236K | โต๊ะ -$64K</div>
                             </div>
                         </div>
 
-                        <!-- Flow Column 2: Where -> Policy 1 & 3 -->
-                        <div style="background: rgba(245, 158, 11, 0.06); padding: 0.85rem; border-radius: 8px; border: 1px dashed rgba(245, 158, 11, 0.35); display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div style="color: var(--gold-light); font-weight: 800; margin-bottom: 0.35rem; font-size: 0.9rem;">🌍 2. ขายที่ไหน (Where)</div>
-                                <div style="color: #fff; font-size: 0.75rem; margin-bottom: 0.4rem;">รุก <strong>Big 3 + Canada</strong> (Margin 26%)<br>คุมหลุมดำ <strong>EMEA & Turkey</strong> (ลด 60-70%)</div>
-                            </div>
-                            <div>
-                                <div style="color: var(--gold-light); font-weight: 700; font-size: 0.75rem; margin: 0.4rem 0;">⬇️ โยงสู่นโยบายสั่งการ ⬇️</div>
-                                <div style="display: flex; flex-direction: column; gap: 0.35rem;">
-                                    <span style="background: rgba(245, 158, 11, 0.2); color: #fde047; padding: 0.3rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem;">🟡 นโยบาย 1: ล็อก Hard Cap 20% ในหลุมดำ</span>
-                                    <span style="background: rgba(16, 185, 129, 0.2); color: var(--emerald-light); padding: 0.3rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem;">🟢 นโยบาย 3: คุมส่ง Express ข้ามทวีป</span>
+                        <!-- ARROW 1 -> 2 -->
+                        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: #38bdf8; font-weight: 800; font-size: 1.4rem; text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);">
+                            <i class="fa-solid fa-angles-right pulse-arrow"></i>
+                            <span style="font-size: 0.55rem; color: #94a3b8; text-transform: uppercase; margin-top: 2px;">Filter</span>
+                        </div>
+
+                        <!-- STAGE 2: STRATEGIC PORTFOLIO ENGINE -->
+                        <div style="background: rgba(56, 189, 248, 0.04); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 10px; padding: 0.85rem; position: relative;">
+                            <div style="background: #0284c7; color: #fff; font-size: 0.72rem; font-weight: 800; padding: 0.2rem 0.55rem; border-radius: 6px; display: inline-block; margin-bottom: 0.65rem;">STAGE 2: 🧭 ระบบคัดกรองกลยุทธ์ (Matrix Engine)</div>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem; font-size: 0.72rem;">
+                                <div style="background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(16, 185, 129, 0.4); padding: 0.5rem; border-radius: 6px;">
+                                    <div style="color: var(--emerald-light); font-weight: 700;">📦 What: สินค้าทำเงิน</div>
+                                    <div style="color: #fff; font-size: 0.68rem;">Copiers, Phones (+Margin 17%)</div>
                                 </div>
+                                <div style="background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(245, 158, 11, 0.4); padding: 0.5rem; border-radius: 6px;">
+                                    <div style="color: var(--gold-light); font-weight: 700;">🌍 Where: ตลาดทองคำ</div>
+                                    <div style="color: #fff; font-size: 0.68rem;">Big 3 + Canada (Win 98%)</div>
+                                </div>
+                            </div>
+                            <div style="background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(168, 85, 247, 0.4); padding: 0.5rem; border-radius: 6px; margin-top: 0.45rem; font-size: 0.72rem;">
+                                <div style="color: #d8b4fe; font-weight: 700;">👥 Who: ลูกค้ากำลังซื้อสูง (Home Office & Corporate)</div>
+                                <div style="color: var(--text-secondary); font-size: 0.68rem;">ไม่อ่อนไหวต่อส่วนลด พร้อมซื้อพ่วงข้ามหมวดในบิลเดียว</div>
                             </div>
                         </div>
 
-                        <!-- Flow Column 3: Who -> Policy 4 & Scale Up -->
-                        <div style="background: rgba(168, 85, 247, 0.06); padding: 0.85rem; border-radius: 8px; border: 1px dashed rgba(168, 85, 247, 0.35); display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <div style="color: #d8b4fe; font-weight: 800; margin-bottom: 0.35rem; font-size: 0.9rem;">👥 3. ขายให้ใคร (Who)</div>
-                                <div style="color: #fff; font-size: 0.75rem; margin-bottom: 0.4rem;">โฟกัส <strong>Home Office & Corporate</strong><br>กำลังซื้อสูง ไม่อ่อนไหวต่อส่วนลด</div>
-                            </div>
-                            <div>
-                                <div style="color: var(--gold-light); font-weight: 700; font-size: 0.75rem; margin: 0.4rem 0;">⬇️ โยงสู่นโยบายสั่งการ ⬇️</div>
-                                <div style="display: flex; flex-direction: column; gap: 0.35rem;">
-                                    <span style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 0.3rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem;">🔵 นโยบาย 4: อัดโปรโมชันขายพ่วงช่วง Q4 High Season ให้ลูกค้า B2B Corporate</span>
+                        <!-- ARROW 2 -> 3 -->
+                        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; color: #10b981; font-weight: 800; font-size: 1.4rem; text-shadow: 0 0 10px rgba(16, 185, 129, 0.6);">
+                            <i class="fa-solid fa-angles-right pulse-arrow"></i>
+                            <span style="font-size: 0.55rem; color: #94a3b8; text-transform: uppercase; margin-top: 2px;">Execute</span>
+                        </div>
+
+                        <!-- STAGE 3: 4 ACTIONABLE POLICIES -->
+                        <div style="background: rgba(16, 185, 129, 0.04); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 10px; padding: 0.85rem; position: relative;">
+                            <div style="background: var(--emerald); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 0.2rem 0.55rem; border-radius: 6px; display: inline-block; margin-bottom: 0.65rem;">STAGE 3: ⚡ สั่งการ 4 นโยบาย (Action Output)</div>
+                            
+                            <div style="background: rgba(15, 23, 42, 0.95); border-left: 3px solid var(--gold); padding: 0.55rem; border-radius: 6px; margin-bottom: 0.5rem; font-size: 0.75rem;">
+                                <div style="color: var(--gold-light); font-weight: 700; display: flex; justify-content: space-between;">
+                                    <span>🛡️ นโยบาย 1, 2, 3 (ตั้งรับ)</span>
+                                    <span style="color: #10b981;">+$736K/Yr</span>
                                 </div>
+                                <div style="color: var(--text-secondary); font-size: 0.7rem;">ล็อกส่วนลด 20% | ขาย Bundle | คุมส่ง Express</div>
+                            </div>
+                            <div style="background: rgba(15, 23, 42, 0.95); border-left: 3px solid #38bdf8; padding: 0.55rem; border-radius: 6px; font-size: 0.75rem; box-shadow: 0 0 10px rgba(56,189,248,0.15);">
+                                <div style="color: #38bdf8; font-weight: 700; display: flex; justify-content: space-between;">
+                                    <span>🚀 นโยบายที่ 4 (เชิงรุก)</span>
+                                    <span style="color: #38bdf8;">+$2.1M Rev</span>
+                                </div>
+                                <div style="color: var(--text-secondary); font-size: 0.7rem;">กระตุ้นขายพ่วงข้ามหมวด (Cross-Selling) ช่วง Q4</div>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div style="margin-top: 0.85rem; background: rgba(0,0,0,0.35); padding: 0.6rem 0.85rem; border-radius: 8px; font-size: 0.75rem; color: #cbd5e1; display: flex; align-items: center; gap: 0.6rem; border: 1px solid rgba(255,255,255,0.05);">
+                        <i class="fa-solid fa-circle-nodes" style="color: #38bdf8; font-size: 1rem;"></i>
+                        <span><strong>Data Flow Takeaway:</strong> ข้อมูลไม่ได้หยุดแค่การรายงานปัญหา (Stage 1) แต่ถูกประมวลผลผ่าน "Matrix Engine" (Stage 2) เพื่อออกเป็น <strong>คำสั่งอัตโนมัติผ่าน BI Dashboard 4 นโยบาย (Stage 3)</strong> ที่ปิดจุดรั่วและเพิ่มรายได้ทันที</span>
                     </div>
                 </div>
 
